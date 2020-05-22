@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hotpink;
+}
+header{
+    background: rgb(223, 58, 58);
+}
+
+header > h1 {
+ color:gray;
+ text-align:center;
+ text-transform: uppercase;
+}
+
+.score-board{
+    border: 3px solid rgb(224, 217, 217);
+    margin: 20px auto;
+    width: 300px;
+    color:rgb(224, 217, 217);;
+    font-size: 50px;
+
+    border-radius:  5px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background:rgb(32, 31, 31);
+    font-size:20px;
+    padding: 3px 10px;
+    border-radius: 7px;
+}
+
+#user-label {
+    position: absolute;
+    top:30px;
+    left:-27px;
+}
+
+#computer-label {
+    position: absolute;
+    top:30px;
+    right:-50px;
+}
+
+.result{
+    font-size: 30px;
+    color:rgb(224, 217, 217);;
+}
+
+.result > p{
+    text-align: center;
+    font-weight: bold; /*두껍게*/
+    letter-spacing: 2px;
+}
+
+.choices{
+    margin: 20px 0;
+    text-align: center;
+}
+.choice {
+    border : 2px solid rgb(224, 217, 217);;
+    border-radius: 10px;
+    display: inline-block;
+    padding:10px;
+    margin: 0 20px;
+    cursor: pointer;
+    text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
+    box-shadow: 3px 0 0 gray;
+    border-bottom:5px solid gray;
+    border-right: 2px solid gray;
+}
+
+.choice:hover{
+    background-color: khaki;
+    transition : 0.5s;
+}
+
+.choice:active{
+    transform:translateY(3px);
+    border-bottom: 2px solid gray;
+    border-right: 0.8px solid gray;
+}
+
+#action-message{
+    text-align: center;
+    color: rgb(224, 217, 217);;
+    font-weight: bold;
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.congratulations{
+    color: rgb(102, 170, 125);
+    background: #f0e116;
+    box-shadow: 0 0 10px #f0e116, 0 0 40px #f0e116, 0 0 80px #f0e116; 
+
+    transition: 0.51s;
+}
